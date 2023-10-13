@@ -4,156 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap.min.css" rel="stylesheet" >
-<title>Задание 4</title>
+<title>Задание 5</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div class="head-top container-fluid ">
-       <div class="container">
-            <div class="row align-items-center" >
-                <div class="logo col-1 col-md-2">
-                    <img src="logo.png"  alt="logo" class="logo">
-                    
-                </div>
-                <div class=" name col-7 col-md-3 "><h1>Задание 4</h1></div>
-                
-                <nav class=" col-md-7 d-flex   justify-content-md-end ">
-                    
-                    <ul >
-                        <div class=" row d-flex   justify-content-md-end">
-                        <li class="col-md-5 col-12 d-flex justify-content-sm-begin justify-content-md-center "><a href="#p1">Список гиперссылок</a></li>
-                        <li class="col-md-3 col-12 d-flex justify-content-sm-begin justify-content-md-center "> <a href="#p2"> Таблица</a> </li>
-                        <li class=" col-md-3 col-12 d-flex justify-content-sm-begin justify-content-md-center "> <a href="#p3">Форма</a> </li>     
-                    </div>
-                    </ul>
-               
-                </nav>
-            </div>
-
-        </div>  
-            
-        
+    <div class="container">
+    <div class="column d-flex align-items-end justify-content-between" >
+    <input id="kol" type="number">
+    <select id="konf">
+        <option disabled>Выберете конфеты</option>
+        <option  value="rod" data-price="170" >Конфеты Родные просторы с вафельной крошкой 180г 170 рублей </option>
+        <option value="merci" data-price="300">Набор шоколадных конфет Merci Ассорти 8 видов шоколада 250г  300 рублей</option>
+        <option value="tofo" data-price="140">Конфеты Toffifee Лесной орех в карамели 125г 140 рублей</option>
+        <option value="kor" data-price="270">Конфеты Коркунов Ассорти темный и молочный шоколад 192г/165г в ассортименте 270 рублей</option>
+        <option value="raf" data-price="400">Конфеты Raffaello с цельным миндальным орехом в кокосовой обсыпке 150г 400 рублей </option>
+        <option value="rot" data-price="170">Набор конфет Рот Фронт Птичье молоко настоящие 200г 170 рублей</option>
+        <option value="fer" data-price="420">Конфеты Ferrero Rocher хрустящие из молочного шоколада 125г 420 рублей</option>
+        <option value="kon" data-price="100">Конфета Konfesta глазированная с кокосовой начинкой 150г 100 рублей</option>
+        <option value="rafm" data-price="350">Конфеты Raffaello Маракуйя 150г 350 рублей</option>
+        <option value="pral" data-price="250">Конфеты Шоколадные Praliness 200г 250 рублей</option>
+        <option value="dim" data-price="250">Конфеты Dimler шоколадные Вишня бренди/Сливочный ликер микс 150г 250 рублей</option>
+        <option value="tofb" data-price="140">Конфеты Toffifee белый шоколад 125г 140 рублей</option>
+    </select>
+    <button class="js-btn-result">Результат</button>
+    <p class="js-output"></p>
     </div>
-</header>
-    
-    <div class="wrapper">
-    <div class="giper">
-    <ul>
-        <li id="p1"><a href="https://www.kubsu.ru/">КубГУ</a></li>
-        <li><a href="https://www.kubsu.ru/">КубГУ</a></li>
-        <li> <a href="https://www.kubsu.ru/"> <img src="https://alrfkuban.ru/src/images/news/29032022kubsu.jpg" alt="кубгу" width="50" height="50"> </a> </li>
-        <li><a href="/web1/vnutr.html">на внутренню страницу </a> </li>
-        <li><a href="/web1/index.html">на главную страницу </a> </li>
-        
-        <li><a href="#p1"> на фрагмент страницы </a> </li>
-        <li><a href="index.html?param1=value1&param2=value2&param3=value3">c тремя параметрами</a></li>
-        <li><a href="index.html?id=p1"> с параметром id</a> </li>
-        <li><a href="index.html"> относительная в текущем каталоге</a> </li>
-        <li><a href="about/vnutr.html"> относительная на страницу в  каталоге about</a> </li>
-        <li><a href="papka1/about/vnutr.html"> текущая для относительных</a> </li>
-        <li><p>Для получения дополнительной информации посетите страницу <a href="vnutr.html">vnutr.html</a>.</p></li>
-        <li><a href="https://ru.wikipedia.org/wiki/Трусова,_Александра_Вячеславовна#Достижения">Перейти к разделу достижения на странице про Трусову</a></li>
-        <li> <map name="myMap" id="myMap">
-            <img src="https://alrfkuban.ru/src/images/news/29032022kubsu.jpg" alt="кубгу"  width="300" height="300"  usemap="#myMap">
-            <area shape="rect" coords="0,0,100,100" alt="прямоугольк" href="https://www.kubsu.ru/">
-            <area shape="circle" coords="200,200,50" alt="круг" href="https://www.kubsu.ru/">
-            
-          </map></li>
-        <li> <a href="#">Ссылка с пустым href</a></li>
-        <li><span style="color: blue; text-decoration: underline; cursor: pointer;">Без href</span></li>
-        <li><a href="vnutr.html" rel="nofollow ">Ссылка по которой запрещен переход поисковикам </a></li>
-        <li><a href="vnutr.html" rel="nofollow noindex">Ссылка запрещенная для индексации </a></li>
-        <li><ol>
-            <li><a href="index.html" title="Описание первой ссылки">Первая ссылка</a></li>
-            <li><a href="index.html" title="Описание второй ссылки">Вторая ссылка</a></li>
-            <li><a href="index.html" title="Описание третьей ссылки">Третья ссылка</a></li>
-          </ol>
-        </li>
-    </ul>
-</div>
-    
-
-    <table id="p2">
-        <tr>
-            <th>1 </th>
-            <th colspan="2">2 и 3</th>
-            <th>4</th>
-        </tr>
-        <tr>
-            <td>1 1 </td>
-            <td>1 2</td>
-            <td>1 3</td>
-            <td>1 4</td>
-        </tr>
-        <tr>
-            <td>2 1</td>
-            <td>2 2</td>
-            <td>2 3</td>
-            <td>2 4</td>
-        </tr>
-        <tr>
-            <td>3 1</td>
-            <td>3 2</td>
-            <td>3 3</td>
-            <td>3 4</td>
-        </tr>
-        <tr>
-            <td>4 1</td>
-            <td>4 2</td>
-            <td>4 3</td>
-            <td>4 4</td>
-        </tr>
-        <tr>
-            <td>5 1</td>
-            <td>5 2</td>
-            <td>5 3</td>
-            <td>5 4</td>
-        </tr>
-        <tr>
-            <td>6 1</td>
-            <td>6 2</td>
-            <td>6 3</td>
-            <td>6 4</td>
-        </tr>
-  
-    </table>
-   
-   
-    <form id="p3">
-       
-        <p><input name="t1" type="text"  placeholder="Введите ФИО"  ></p>
-        <p><input name="tl" type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
-        <p><input name="em" type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
-        <p>"Введите дату рождения"</p>
-        <p><input name="dat" type="date"  value="2023-09-10"  ></p>
-        <p><b>Ваш пол</b></p>
-        <p><input name="pol" type="radio" value="женский"> женский</p>
-        <p><input name="pol" type="radio" value="мужской"> мужской</p>
-        
-        <p>Ваш любимый язык программирования<p>
-        <select multiple="multiple" id="langu" name="langu[]">
-            <option disabled>Выберете</option>
-            <option  value="s1">Pascal</option>
-            <option value="s2">C</option>
-            <option value="s3">C++</option>
-            <option value="s4">JavaScript</option>
-            <option value="s5">PHP</option>
-            <option value="s6">Python</option>
-            <option value="s7">Java</option>
-            <option value="s8">Haskel</option>
-            <option value="s9">Clojure</option>
-            <option value="s10">Prolog</option>
-            <option value="s11">Scala</option>
-        </select>
-        <p><b>Биография:</b></p>
-        <p><textarea name ="bio"></textarea></p>
-        <p>С контрактом ознакомлен</p>
-        <p><input name="oznakom" type="checkbox" value="1"> ознакомлен</p>
-        <p><input name="sohr" type="submit" value="Сохранить"></p>
-    
-    </form>
-</div>
-    <footer class="footer"><p>(c) Долинина Ксения 2023</p></footer>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
