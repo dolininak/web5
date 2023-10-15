@@ -6,11 +6,12 @@
     <link href="bootstrap.min.css" rel="stylesheet" >
 <title>Задание 5</title>
 <link rel="stylesheet" href="style.css">
+<script defer src="index.js"></script>
 </head>
 <body>
-    <div class="container">
-    <div class="column d-flex align-items-end justify-content-between" >
-    <input id="kol" type="number">
+    
+    <div class="p-3 column d-flex align-items-end justify-content-between" >
+    <input id="kol" type="number" placeholder="введите количество ">
     <select id="konf">
         <option disabled>Выберете конфеты</option>
         <option  value="rod" data-price="170" >Конфеты Родные просторы с вафельной крошкой 180г 170 рублей </option>
@@ -27,9 +28,10 @@
         <option value="tofb" data-price="140">Конфеты Toffifee белый шоколад 125г 140 рублей</option>
     </select>
     <button class="js-btn-result">Результат</button>
+    </div>
     <p class="js-output"></p>
-    </div>
-    </div>
-    <script src="index.js"></script>
+    
+
+    
 </body>
 </html>
