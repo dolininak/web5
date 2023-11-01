@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed");
 var kol=document.getElementById('kol');
 const btnResultNode=document.querySelector('.js-btn-result');
 const outputNode=document.querySelector('.js-output');
@@ -22,4 +24,4 @@ btnResultNode.addEventListener('click',function(){
         outputNode.innerHTML = "Недопустимые символы";
       } else {
     outputNode.innerHTML="ИТОГО:"+totalPrice;}
-});
+});}
