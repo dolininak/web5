@@ -24,4 +24,4 @@ btnResultNode.addEventListener('click',function(){
         outputNode.innerHTML = "Недопустимые символы";
       } else {
     outputNode.innerHTML="ИТОГО:"+totalPrice;}
-});}
+});});
